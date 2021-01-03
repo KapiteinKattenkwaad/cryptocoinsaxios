@@ -7,10 +7,14 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     bitcoinStore: null,
+    authenticated: false
 
   },
   mutations: {
     setBitcoin: (state, bitcoinStore) => (state.bitcoinStore = bitcoinStore),
+    setAuthentication(state, status) {
+      state.authenticated = status
+    }
   },
   actions: {
     async fetchBitcoin({ commit }) {

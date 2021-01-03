@@ -1,20 +1,19 @@
 <template>
     <div id="app">
-        <Bitcoin/>
-        <Ormeus/>
-        <OrmeusHistory/>
+        <router-view>
+
+        </router-view>
+
     </div>
 </template>
 
 <script>
 
-    import Bitcoin from "./components/Bitcoin";
-    import Ormeus from "./components/Ormeus";
-    import OrmeusHistory from "./components/OrmeusHistory";
+
 
     export default {
         name: 'App',
-        components: {OrmeusHistory, Ormeus, Bitcoin},
+
         data() {
             return {
                 bitcoin: null,
