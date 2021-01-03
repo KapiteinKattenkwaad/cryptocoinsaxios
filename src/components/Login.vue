@@ -66,7 +66,7 @@
                     this.$store.commit('setAuthentication', true)
                     this.$router.replace({ name: 'secure' })
                 } else {
-                    console.log('credentials not correc')
+                    console.log('use admin as username and test as password')
                 }
             }
         },
